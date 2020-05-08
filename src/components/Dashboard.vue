@@ -27,7 +27,7 @@ export default {
         }
     },
     created(){
-        db.collection("employees").orderBy('dept').get()
+        db.collection('employees').orderBy('dept').get()
         .then(querySnapShot =>{
             querySnapShot.forEach(doc=>{
                 console.log(doc.data())
