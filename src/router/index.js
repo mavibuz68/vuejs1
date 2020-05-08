@@ -4,6 +4,7 @@ import Dashboard from '@/components/Dashboard'
 import NewEmployee from '@/components/NewEmployee'
 import EditEmployee from '@/components/EditEmployee'
 import ViewEmployee from '@/components/ViewEmployee'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
@@ -29,5 +30,10 @@ export default new Router({
       name: 'view-employee',
       component: ViewEmployee
     },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    }
   ]
 })

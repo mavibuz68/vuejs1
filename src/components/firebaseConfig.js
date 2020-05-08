@@ -1,9 +1,9 @@
 export default{
-    apiKey: "AIzaSyDoP0vDgWtqzsWux7ioIS0ytsctanp7Gpc",
-    authDomain: "vuefs-prod-52b27.firebaseapp.com",
-    databaseURL: "https://vuefs-prod-52b27.firebaseio.com",
-    projectId: "vuefs-prod-52b27",
-    storageBucket: "vuefs-prod-52b27.appspot.com",
-    messagingSenderId: "47839527226",
-    appId: "1:47839527226:web:fe900f35856e9187661003"
+    apiKey: "AIzaSyAWxUaYNhwqs0xQYkK9I3jtqUsEOCg7swI",
+    authDomain: "empmanager-de947.firebaseapp.com",
+    databaseURL: "https://empmanager-de947.firebaseio.com",
+    projectId: "empmanager-de947",
+    storageBucket: "empmanager-de947.appspot.com",
+    messagingSenderId: "343779914672",
+    appId: "1:343779914672:web:3396ad3aa3ac9fa4db9c75"
 }
