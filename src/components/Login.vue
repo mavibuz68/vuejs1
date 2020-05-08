@@ -1,43 +1,28 @@
 <template>
-  <div class="container">
+  <div>
+    <div class="container">
     <div class="row">
-        <div class="col m6">
-            <h2 class="center-align">Login</h2>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="pass" type="password" class="validate">
-                            <label for="pass">Password</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <p>
-                                <input type="checkbox" id="remember">
-                                <label for="remember">Remember me</label>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="row">
-                        <div class="col m12">
-                            <p class="right-align">
-                                <button class="btn btn-large waves-effect waves-light" type="button" name="action">Login</button>
-                            </p>
-                        </div>
-                    </div>
-                </form>
+      <div class="col s12 m8 offset-m2">
+        <div class="login card-panel green white-text center">
+          <h3>Login</h3>
+          <form action="index.html">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" v-model="email">
+              <label class="white-text" for="email">Email Address</label>
             </div>
+            <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input type="password" id="password" v-model="password">
+              <label class="white-text" for="password">Password</label>
+            </div>
+            <button v-on:click="login" class="btn btn-large btn-extended grey lighten-4 black-text">Login</button>
+          </form>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  </div>
 </template>
 <script>
 export default {
