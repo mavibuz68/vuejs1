@@ -25,12 +25,27 @@
   </div>
 </template>
 <script>
+import firebase from 'firebase'
 export default {
     name:"login",
     data(){
         return{
-
+          email:'',
+          password:''
         }
+    },
+    methods:{
+      login:function(e){
+        firebase.auth().signInWithEmailAndPassword(this.email,this.password)
+        .then(user=>{
+          alert("You are logged")
+          this.$router.go({path:this.$router.path});
+        },
+        err=>{
+          alert(err.message)
+        })
+        e.preventDefault()
+      }
     }
 }
 </script>
