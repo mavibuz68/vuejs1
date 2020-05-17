@@ -6,6 +6,7 @@ import EditEmployee from '@/components/EditEmployee'
 import ViewEmployee from '@/components/ViewEmployee'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
+import TestStage from '@/components/TestStage'
 import firebase from 'firebase'
 
 Vue.use(Router)
@@ -34,6 +35,14 @@ let router = new Router({
       component: Register,
       meta:{
         requiresGuest:true
+      }
+    },
+    {
+      path: '/test',
+      name: 'test-stage',
+      component: TestStage,
+      meta:{
+        requiresAuth:true
       }
     },
     {
