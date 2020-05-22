@@ -5,7 +5,7 @@
                 <router-link to="/" class="brand-logo">
                     Employee Manager
                 </router-link>
-                <ul class="right">
+                <ul class="right center">
                     <li v-if="isLoggedIn"><span class="email black-text">{{currentUser}}</span></li>
                     <li v-if="isLoggedIn"><router-link to="/">Dasboard</router-link></li>
                     <li v-if="!isLoggedIn"><router-link to="/login">Login</router-link></li>
